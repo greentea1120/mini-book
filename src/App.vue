@@ -1,10 +1,18 @@
 <template>
   <div id="app">
+    <Welcome />
+    <Guide />
     <router-view></router-view>
   </div>
 </template>
 <script>
+import Welcome from './components/Welcome'
+import Guide from './components/Guide'
 export default {
+  components: {
+    Welcome,
+    Guide
+  }
 }
 // rem config
 document.addEventListener('DOMContentLoaded', () => {
